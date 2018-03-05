@@ -22,8 +22,8 @@ namespace simplecalc
              private void calcbutton_Click(object sender, EventArgs e)
              {
                 /// 変数の宣言
-                int valueLeft;    // 入力値１用の整数型変数
-                int valueRight;   // 入力値２用の整数型変数
+                int valueRight;    // 入力値１用の整数型変数
+                int valueLeft;   // 入力値２用の整数型変数
                 int valueanswer;  // 計算結果用整数型変数
  
                 valueLeft = inputCheck(input1textbox.Text, out valueLeft);
