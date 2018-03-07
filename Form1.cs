@@ -22,18 +22,18 @@ namespace simplecalc
              private void calcbutton_Click(object sender, EventArgs e)
              {
                 /// 変数の宣言
-                int VL;    // 入力値１用の整数型変数
-                int VR;   // 入力値２用の整数型変数
-                int VA;  // 計算結果用整数型変数
+                int ValueLeft;    // 入力値１用の整数型変数
+                int ValueRight;   // 入力値２用の整数型変数
+                int ValueAnswer;  // 計算結果用整数型変数
  
-                VL = inputCheck(input1textbox.Text, out VL);
-                VR = inputCheck(input2textbox.Text, out VR);
+                ValueLeft = inputCheck(input1textbox.Text, out ValueLeft);
+                ValueRight = inputCheck(input2textbox.Text, out ValueRight);
             
             /// 取り込んだ値の計算
-           VA = VL + VR;
+           ValueAnswer = ValueLeft + ValueRight;
             
             /// 計算結果の入力
-            answertexbox.Text = VA.ToString(); //　文字列に変換後代入
+            answertexbox.Text = ValueAnswer.ToString(); //　文字列に変換後代入
         }
 
       private int InputCheck(string textvalue, out int value)
